@@ -1,0 +1,113 @@
+Application.html
+\<html>
+    <head>
+        <style>
+            div {
+                width: 500px;
+                height: 600px;
+                padding: 35px;
+                font-size:25px;
+                color: black;
+                background-color:black;
+                margin: auto;
+
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid black;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical
+            }
+
+
+            input[type=submit] {
+                background-color: green;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+
+            .container {
+                border-radius: 5px;
+                background-color:aliceblue;
+                color:black
+            }
+            body{
+                background-image: url("https://b2-security.bg/images/2/b1e3ac341c6c35191b84c44a1dafe4bf/index-security-bg-353.jpg");
+                padding: 20px;
+                background-repeat: no-repeat;
+
+                background-attachment: fixed;
+                background-size: 2700px
+            }
+
+
+
+        </style>
+    </head>
+
+    <body >
+        <h1 style="background-color:black;text-align:center;font-size:60px;color:white;">
+            SECURITY SERVICES
+        </h1>
+        <h2 style="background-color:yellow;text-align:right;font-size: 25px;color:olivedrab">
+            <a href='front.html'>Home</a>&nbsp;&nbsp;&nbsp;
+            <a href='tips.html'>Tips</a>&nbsp;&nbsp;&nbsp;
+            <a href='about.html'>About</a>&nbsp;&nbsp;&nbsp;
+            <a href='contactus.html'>Contact US</a>&nbsp;&nbsp;
+        </h2>
+        <div class="container">
+            <form  action="userdetails.jsp" method="post" style="font-color:black">
+
+
+
+                <header >FILL THE FORM .. </header>
+                <br>
+                <br>
+
+                <label >UserName</label>
+                <input type="text" name="username">
+
+
+                <label>Location</label>
+                <textarea name="location" required></textarea>
+
+
+
+                <label>ContactNo</label>
+                <input type="text" name="contactnum">
+
+
+                <label>Gender: </label>
+                <input type="radio" id="gender" name="gender" value="male"/> Male
+                <input type="radio" id="gender" name="gender" value="female"/> Female
+                <input type="radio" id="children" name="gender" value="others"/>others
+                <br>
+                <br>
+
+               
+
+                    <input type="submit" value="submit" >
+
+
+
+                    
+            </form>
+            </div>
+
+    </body>
+
+</html>
+
+ 
